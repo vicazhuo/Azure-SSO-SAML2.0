@@ -1,0 +1,574 @@
+<html lang="zh-CN" class="fontawesome-i2svg-active fontawesome-i2svg-complete translated-ltr">
+<head>
+    <title>APM Monaco — SAML 2.0</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Spring Boot - SAML 2.0 Service Provider">
+    <meta name="author" content="Vincenzo De Notaris">
+    <style type="text/css">svg:not(:root).svg-inline--fa {
+            overflow: visible
+        }
+
+        .svg-inline--fa {
+            display: inline-block;
+            font-size: inherit;
+            height: 1em;
+            overflow: visible;
+            vertical-align: -.125em
+        }
+
+        .svg-inline--fa.fa-lg {
+            vertical-align: -.225em
+        }
+
+        .svg-inline--fa.fa-w-1 {
+            width: .0625em
+        }
+
+        .svg-inline--fa.fa-w-2 {
+            width: .125em
+        }
+
+        .svg-inline--fa.fa-w-3 {
+            width: .1875em
+        }
+
+        .svg-inline--fa.fa-w-4 {
+            width: .25em
+        }
+
+        .svg-inline--fa.fa-w-5 {
+            width: .3125em
+        }
+
+        .svg-inline--fa.fa-w-6 {
+            width: .375em
+        }
+
+        .svg-inline--fa.fa-w-7 {
+            width: .4375em
+        }
+
+        .svg-inline--fa.fa-w-8 {
+            width: .5em
+        }
+
+        .svg-inline--fa.fa-w-9 {
+            width: .5625em
+        }
+
+        .svg-inline--fa.fa-w-10 {
+            width: .625em
+        }
+
+        .svg-inline--fa.fa-w-11 {
+            width: .6875em
+        }
+
+        .svg-inline--fa.fa-w-12 {
+            width: .75em
+        }
+
+        .svg-inline--fa.fa-w-13 {
+            width: .8125em
+        }
+
+        .svg-inline--fa.fa-w-14 {
+            width: .875em
+        }
+
+        .svg-inline--fa.fa-w-15 {
+            width: .9375em
+        }
+
+        .svg-inline--fa.fa-w-16 {
+            width: 1em
+        }
+
+        .svg-inline--fa.fa-w-17 {
+            width: 1.0625em
+        }
+
+        .svg-inline--fa.fa-w-18 {
+            width: 1.125em
+        }
+
+        .svg-inline--fa.fa-w-19 {
+            width: 1.1875em
+        }
+
+        .svg-inline--fa.fa-w-20 {
+            width: 1.25em
+        }
+
+        .svg-inline--fa.fa-pull-left {
+            margin-right: .3em;
+            width: auto
+        }
+
+        .svg-inline--fa.fa-pull-right {
+            margin-left: .3em;
+            width: auto
+        }
+
+        .svg-inline--fa.fa-border {
+            height: 1.5em
+        }
+
+        .svg-inline--fa.fa-li {
+            width: 2em
+        }
+
+        .svg-inline--fa.fa-fw {
+            width: 1.25em
+        }
+
+        .fa-layers svg.svg-inline--fa {
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            position: absolute;
+            right: 0;
+            top: 0
+        }
+
+        .fa-layers {
+            display: inline-block;
+            height: 1em;
+            position: relative;
+            text-align: center;
+            vertical-align: -.125em;
+            width: 1em
+        }
+
+        .fa-layers svg.svg-inline--fa {
+            -webkit-transform-origin: center center;
+            transform-origin: center center
+        }
+
+        .fa-layers-counter, .fa-layers-text {
+            display: inline-block;
+            position: absolute;
+            text-align: center
+        }
+
+        .fa-layers-text {
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            -webkit-transform-origin: center center;
+            transform-origin: center center
+        }
+
+        .fa-layers-counter {
+            background-color: #ff253a;
+            border-radius: 1em;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            color: #fff;
+            height: 1.5em;
+            line-height: 1;
+            max-width: 5em;
+            min-width: 1.5em;
+            overflow: hidden;
+            padding: .25em;
+            right: 0;
+            text-overflow: ellipsis;
+            top: 0;
+            -webkit-transform: scale(.25);
+            transform: scale(.25);
+            -webkit-transform-origin: top right;
+            transform-origin: top right
+        }
+
+        .fa-layers-bottom-right {
+            bottom: 0;
+            right: 0;
+            top: auto;
+            -webkit-transform: scale(.25);
+            transform: scale(.25);
+            -webkit-transform-origin: bottom right;
+            transform-origin: bottom right
+        }
+
+        .fa-layers-bottom-left {
+            bottom: 0;
+            left: 0;
+            right: auto;
+            top: auto;
+            -webkit-transform: scale(.25);
+            transform: scale(.25);
+            -webkit-transform-origin: bottom left;
+            transform-origin: bottom left
+        }
+
+        .fa-layers-top-right {
+            right: 0;
+            top: 0;
+            -webkit-transform: scale(.25);
+            transform: scale(.25);
+            -webkit-transform-origin: top right;
+            transform-origin: top right
+        }
+
+        .fa-layers-top-left {
+            left: 0;
+            right: auto;
+            top: 0;
+            -webkit-transform: scale(.25);
+            transform: scale(.25);
+            -webkit-transform-origin: top left;
+            transform-origin: top left
+        }
+
+        .fa-lg {
+            font-size: 1.33333em;
+            line-height: .75em;
+            vertical-align: -.0667em
+        }
+
+        .fa-xs {
+            font-size: .75em
+        }
+
+        .fa-sm {
+            font-size: .875em
+        }
+
+        .fa-1x {
+            font-size: 1em
+        }
+
+        .fa-2x {
+            font-size: 2em
+        }
+
+        .fa-3x {
+            font-size: 3em
+        }
+
+        .fa-4x {
+            font-size: 4em
+        }
+
+        .fa-5x {
+            font-size: 5em
+        }
+
+        .fa-6x {
+            font-size: 6em
+        }
+
+        .fa-7x {
+            font-size: 7em
+        }
+
+        .fa-8x {
+            font-size: 8em
+        }
+
+        .fa-9x {
+            font-size: 9em
+        }
+
+        .fa-10x {
+            font-size: 10em
+        }
+
+        .fa-fw {
+            text-align: center;
+            width: 1.25em
+        }
+
+        .fa-ul {
+            list-style-type: none;
+            margin-left: 2.5em;
+            padding-left: 0
+        }
+
+        .fa-ul > li {
+            position: relative
+        }
+
+        .fa-li {
+            left: -2em;
+            position: absolute;
+            text-align: center;
+            width: 2em;
+            line-height: inherit
+        }
+
+        .fa-border {
+            border: solid .08em #eee;
+            border-radius: .1em;
+            padding: .2em .25em .15em
+        }
+
+        .fa-pull-left {
+            float: left
+        }
+
+        .fa-pull-right {
+            float: right
+        }
+
+        .fa.fa-pull-left, .fab.fa-pull-left, .fal.fa-pull-left, .far.fa-pull-left, .fas.fa-pull-left {
+            margin-right: .3em
+        }
+
+        .fa.fa-pull-right, .fab.fa-pull-right, .fal.fa-pull-right, .far.fa-pull-right, .fas.fa-pull-right {
+            margin-left: .3em
+        }
+
+        .fa-spin {
+            -webkit-animation: fa-spin 2s infinite linear;
+            animation: fa-spin 2s infinite linear
+        }
+
+        .fa-pulse {
+            -webkit-animation: fa-spin 1s infinite steps(8);
+            animation: fa-spin 1s infinite steps(8)
+        }
+
+        @-webkit-keyframes fa-spin {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0)
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg)
+            }
+        }
+
+        @keyframes fa-spin {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0)
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg)
+            }
+        }
+
+        .fa-rotate-90 {
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg)
+        }
+
+        .fa-rotate-180 {
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg)
+        }
+
+        .fa-rotate-270 {
+            -webkit-transform: rotate(270deg);
+            transform: rotate(270deg)
+        }
+
+        .fa-flip-horizontal {
+            -webkit-transform: scale(-1, 1);
+            transform: scale(-1, 1)
+        }
+
+        .fa-flip-vertical {
+            -webkit-transform: scale(1, -1);
+            transform: scale(1, -1)
+        }
+
+        .fa-flip-horizontal.fa-flip-vertical {
+            -webkit-transform: scale(-1, -1);
+            transform: scale(-1, -1)
+        }
+
+        :root .fa-flip-horizontal, :root .fa-flip-vertical, :root .fa-rotate-180, :root .fa-rotate-270, :root .fa-rotate-90 {
+            -webkit-filter: none;
+            filter: none
+        }
+
+        .fa-stack {
+            display: inline-block;
+            height: 2em;
+            position: relative;
+            width: 2em
+        }
+
+        .fa-stack-1x, .fa-stack-2x {
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            position: absolute;
+            right: 0;
+            top: 0
+        }
+
+        .svg-inline--fa.fa-stack-1x {
+            height: 1em;
+            width: 1em
+        }
+
+        .svg-inline--fa.fa-stack-2x {
+            height: 2em;
+            width: 2em
+        }
+
+        .fa-inverse {
+            color: #fff
+        }
+
+        .sr-only {
+            border: 0;
+            clip: rect(0, 0, 0, 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px
+        }
+
+        .sr-only-focusable:active, .sr-only-focusable:focus {
+            clip: auto;
+            height: auto;
+            margin: 0;
+            overflow: visible;
+            position: static;
+            width: auto
+        }</style>
+    <link rel="icon" href="/img/favicon.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <!-- Custom styles for this template -->
+    <link href="/css/saml-sp.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" charset="UTF-8"
+          href="https://translate.googleapis.com/translate_static/css/translateelement.css">
+</head>
+
+<body class="bg-light">
+<!-- Main starts -->
+<div role="main" class="container">
+    <!-- Header starts -->
+    <header role="header" class="d-flex align-items-center p-3 my-3 text-white-50 bg-spring-green rounded box-shadow">
+        <img class="mr-3" src="/img/logo.png" alt="" height="48">
+        <div class="lh-100">
+            <h6 class="mb-0 text-white lh-100"><font style="vertical-align: inherit;"><font
+                            style="vertical-align: inherit;">APM Monaco — SAML 2.0 测试版</font></font></h6>
+        </div>
+    </header>
+    <!-- Header ends -->
+    <% if (!isAuth) { %>
+    <!-- Content starts -->
+    <section role="content" class="my-3 p-3 bg-white rounded box-shadow">
+        <h6 class="border-bottom border-gray pb-2 mb-0"><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">身份验证流程：</font></font></h6>
+        <div class="media text-muted pt-3">
+            <svg class="svg-inline--fa fa-building fa-w-14 fa-2x fa-fw mr-2 spring-green" data-fa-transform="shrink-4"
+                 aria-hidden="true" data-prefix="fas" data-icon="building" role="img" xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 448 512" data-fa-i2svg="" style="transform-origin: 0.4375em 0.5em;">
+                <g transform="translate(224 256)">
+                    <g transform="translate(0, 0)  scale(0.75, 0.75)  rotate(0 0 0)">
+                        <path fill="currentColor"
+                              d="M436 480h-20V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v456H12c-6.627 0-12 5.373-12 12v20h448v-20c0-6.627-5.373-12-12-12zM128 76c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12V76zm0 96c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40zm52 148h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12zm76 160h-64v-84c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v84zm64-172c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40zm0-96c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40zm0-96c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12V76c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40z"
+                              transform="translate(-224 -256)"></path>
+                    </g>
+                </g>
+            </svg><!-- <i class="fas fa-building fa-2x fa-fw mr-2 spring-green" data-fa-transform="shrink-4"></i> -->
+            <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                <strong class="d-block text-gray-dark"><font style="vertical-align: inherit;"><font
+                                style="vertical-align: inherit;">选择您的身份提供者 (IdP)</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        选择保存您的身份验证数据的身份提供者。</font><font style="vertical-align: inherit;">您可以让用户明确选择
+                        IdP（如本例），也可以配置身份提供者发现的自动方式。
+                    </font></font></p>
+        </div>
+        <div class="media text-muted pt-3">
+            <svg class="svg-inline--fa fa-user-lock fa-w-20 fa-2x fa-fw mr-2 spring-green" data-fa-transform="shrink-4"
+                 aria-hidden="true" data-prefix="fas" data-icon="user-lock" role="img"
+                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""
+                 style="transform-origin: 0.625em 0.5em;">
+                <g transform="translate(320 256)">
+                    <g transform="translate(0, 0)  scale(0.75, 0.75)  rotate(0 0 0)">
+                        <path fill="currentColor"
+                              d="M320 320c0-11.1 3.1-21.4 8.1-30.5-4.8-.5-9.5-1.5-14.5-1.5h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h280.9c-5.5-9.5-8.9-20.3-8.9-32V320zm-96-64c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm384 32h-32v-48c0-44.2-35.8-80-80-80s-80 35.8-80 80v48h-32c-17.7 0-32 14.3-32 32v160c0 17.7 14.3 32 32 32h224c17.7 0 32-14.3 32-32V320c0-17.7-14.3-32-32-32zm-80 0h-64v-48c0-17.6 14.4-32 32-32s32 14.4 32 32v48z"
+                              transform="translate(-320 -256)"></path>
+                    </g>
+                </g>
+            </svg><!-- <i class="fas fa-user-lock fa-2x fa-fw mr-2 spring-green" data-fa-transform="shrink-4"></i> -->
+            <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                <strong class="d-block text-gray-dark"><font style="vertical-align: inherit;"><font
+                                style="vertical-align: inherit;">针对选定的 IdP 进行身份验证</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        服务提供商 (SP) 生成 SAML 2.0 身份验证请求，该请求被编码并嵌入到 SSO 服务的 URL 中。</font><font
+                            style="vertical-align: inherit;">重定向后，您必须提供您的凭据以针对选定的 IdP 进行身份验证。
+                    </font></font></p>
+        </div>
+        <div class="media text-muted pt-3">
+            <svg class="svg-inline--fa fa-user-tag fa-w-20 fa-2x fa-fw mr-2 spring-green" data-fa-transform="shrink-4"
+                 aria-hidden="true" data-prefix="fas" data-icon="user-tag" role="img" xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 640 512" data-fa-i2svg="" style="transform-origin: 0.625em 0.5em;">
+                <g transform="translate(320 256)">
+                    <g transform="translate(0, 0)  scale(0.75, 0.75)  rotate(0 0 0)">
+                        <path fill="currentColor"
+                              d="M630.6 364.9l-90.3-90.2c-12-12-28.3-18.7-45.3-18.7h-79.3c-17.7 0-32 14.3-32 32v79.2c0 17 6.7 33.2 18.7 45.2l90.3 90.2c12.5 12.5 32.8 12.5 45.3 0l92.5-92.5c12.6-12.5 12.6-32.7.1-45.2zm-182.8-21c-13.3 0-24-10.7-24-24s10.7-24 24-24 24 10.7 24 24c0 13.2-10.7 24-24 24zm-223.8-88c70.7 0 128-57.3 128-128C352 57.3 294.7 0 224 0S96 57.3 96 128c0 70.6 57.3 127.9 128 127.9zm127.8 111.2V294c-12.2-3.6-24.9-6.2-38.2-6.2h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 287.9 0 348.1 0 422.3v41.6c0 26.5 21.5 48 48 48h352c15.5 0 29.1-7.5 37.9-18.9l-58-58c-18.1-18.1-28.1-42.2-28.1-67.9z"
+                              transform="translate(-320 -256)"></path>
+                    </g>
+                </g>
+            </svg><!-- <i class="fas fa-user-tag fa-2x fa-fw mr-2 spring-green" data-fa-transform="shrink-4"></i> -->
+            <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                <strong class="d-block text-gray-dark"><font style="vertical-align: inherit;"><font
+                                style="vertical-align: inherit;">返回并查看您的登录数据</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        身份提供者将编码后的 SAML 响应返回给浏览器。</font><font style="vertical-align: inherit;">您将被重定向回服务提供商。</font><font
+                            style="vertical-align: inherit;">如果您的身份由 IdP 确定，您将获得应用程序访问权限并显示您的个人资料数据。
+                    </font></font></p>
+        </div>
+        <div class="media text-muted pt-3">
+            <svg class="svg-inline--fa fa-door-closed fa-w-20 fa-2x fa-fw mr-2 spring-green"
+                 data-fa-transform="shrink-4" aria-hidden="true" data-prefix="fas" data-icon="door-closed" role="img"
+                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""
+                 style="transform-origin: 0.625em 0.5em;">
+                <g transform="translate(320 256)">
+                    <g transform="translate(0, 0)  scale(0.75, 0.75)  rotate(0 0 0)">
+                        <path fill="currentColor"
+                              d="M624 448H512V50.8C512 22.78 490.47 0 464 0H175.99c-26.47 0-48 22.78-48 50.8V448H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h608c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM415.99 288c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32c.01 17.67-14.32 32-32 32z"
+                              transform="translate(-320 -256)"></path>
+                    </g>
+                </g>
+            </svg><!-- <i class="fas fa-door-closed fa-2x fa-fw mr-2 spring-green" data-fa-transform="shrink-4"></i> -->
+            <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                <strong class="d-block text-gray-dark"><font style="vertical-align: inherit;"><font
+                                style="vertical-align: inherit;">从您的会话中注销</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        您现在可以从该应用程序注销。</font><font style="vertical-align: inherit;">如果启用，除了它自己的 SSO 会话（IdP
+                        端）之外，您还可以调用使客户端应用程序会话无效的单点注销 (SLO)。
+                    </font></font></p>
+        </div>
+        <small class="d-block text-right mt-3" id="sso-btn">
+            <a href="/login" class="btn btn-spring btn-sm">
+                <svg class="svg-inline--fa fa-rocket fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="rocket"
+                     role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                    <path fill="currentColor"
+                          d="M505.1 19.1C503.8 13 499 8.2 492.9 6.9 460.7 0 435.5 0 410.4 0 307.2 0 245.3 55.2 199.1 128H94.9c-18.2 0-34.8 10.3-42.9 26.5L2.6 253.3c-8 16 3.6 34.7 21.5 34.7h95.1c-5.9 12.8-11.9 25.5-18 37.7-3.1 6.2-1.9 13.6 3 18.5l63.6 63.6c4.9 4.9 12.3 6.1 18.5 3 12.2-6.1 24.9-12 37.7-17.9V488c0 17.8 18.8 29.4 34.7 21.5l98.7-49.4c16.3-8.1 26.5-24.8 26.5-42.9V312.8c72.6-46.3 128-108.4 128-211.1.1-25.2.1-50.4-6.8-82.6zM400 160c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48z"></path>
+                </svg><!-- <i class="fas fa-rocket"></i> --><font style="vertical-align: inherit;"><font
+                            style="vertical-align: inherit;">登陆</font></font></a>
+        </small>
+    </section>
+    <% } else { %>
+        <div>您的SAML授权信息如下：</div>
+        <%= data %>
+    <% } %>
+    <!-- Content ends -->
+</div>
+<!-- Main ends -->
+<!-- Bootstrap scripts -->
+<script src="/js/bootstrap.min.js"></script>
+<!-- Font Awesome scripts -->
+<script defer="" src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+</body>
+</html>
+

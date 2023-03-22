@@ -1,0 +1,22 @@
+{
+  "name": "samplesamlapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "pm2 start pm2.config.js --only azure-saml-platform --no-daemon"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "express-session": "^1.15.6",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "passport": "^0.4.0",
+    "passport-saml": "^1.0.0"
+  },
+  "engines": {
+    "node": "10.x"
+  }
+}
